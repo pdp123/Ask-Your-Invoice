@@ -41,7 +41,7 @@ def main():
 
     st.header("Multilanguage Invoice Extrator using Gemini AI")
     input = st.text_input("Ask Question : ",key="input")
-    uploaded_file = st.file_uploader("Chppse an image of the invoice...",type=["jpg","jpeg","png"])
+    uploaded_file = st.file_uploader("Choose an image of the invoice...",type=["jpg","jpeg","png"])
     image=""
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
